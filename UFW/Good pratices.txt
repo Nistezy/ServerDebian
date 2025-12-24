@@ -1,0 +1,4 @@
+Good pratices -> sudo ufw default deny incoming
+Good pratices -> sudo ufw default allow outgoing
+Allow ssh -> sudo ufw allow ssh
+Start ufw -> sudo ufw enable
