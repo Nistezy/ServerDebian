@@ -1,0 +1,2 @@
+Check .conf of dhcpd.conf -> sudo /usr/sbin/dhcpd -t -cf /etc/dhcp/dhcpd.conf
+Chek is running dhcp-> systemctl status isc-dhcp-server.service
