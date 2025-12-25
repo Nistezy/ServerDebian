@@ -17,3 +17,5 @@ O projeto segue um roadmap estruturado por fases, evoluindo desde a base do sist
 * Aplicações vulneráveis para testes controlados;
 * Camadas progressivas de segurança, monitoramento e logging;
 * O laboratório simula cenários comuns encontrados em ambientes corporativos reais.
+
+Topologia do Projeto -> [text](https://drive.google.com/file/d/1-2KbsMv0G8DeYOhQdZbc5kUDwZ3DD7pU/view?usp=sharing)
