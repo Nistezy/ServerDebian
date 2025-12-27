@@ -1,0 +1,12 @@
+Install Bind9 -> sudo apt install bind9
+Restart Service if complete conf. -> sudo systemctl restart bind9
+Status of DNS -> sudo systemctl status bind9
+Check if the conf. ->  sudo named-checkconf /etc/bind/named.conf.local
+Check if the conf. -> named-checkzone cypherbaron.local /etc/bind/cypherbaron.local.forward
+Check if the conf. -> named-checkzone 10.168.192.in-addr.arpa /etc/bind/cypherbaron.local.reverse
+
+Commands used for testing: 
+dig @localhost cypherbaron.local
+dig @localhost -x 192.168.10.50
+host pc01.cypherbaron.local 127.0.0.1
+

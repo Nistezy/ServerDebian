@@ -1,0 +1,15 @@
+;
+; Zona reversa para 192.168.2.0/24
+;
+$TTL 1200
+@       IN      SOA     ns1.cypherbaron.local. root.cypherbaron.local. (
+                        2025122801      ; Serial
+                        86400           ; Refresh
+                        1200            ; Retry
+                        2419200         ; Expire
+                        1200 )          ; Negative Cache TTL
+
+@       IN      NS      ns1.cypherbaron.local.
+
+50      IN      PTR     pc01.cypherbaron.local.
+1       IN      PTR     ns1.cypherbaron.local.
