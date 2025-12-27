@@ -18,4 +18,4 @@ O projeto segue um roadmap estruturado por fases, evoluindo desde a base do sist
 * Camadas progressivas de segurança, monitoramento e logging;
 * O laboratório simula cenários comuns encontrados em ambientes corporativos reais.
 
-Topologia do Projeto -> [Click here](https://drive.google.com/file/d/1-2KbsMv0G8DeYOhQdZbc5kUDwZ3DD7pU/view?usp=sharing)
+Topologia do Projeto -> [Click here](https://drive.google.com/file/d/1I9YuJg7zTzS3N6U9B6D-FhTM8fC8n8pW/view?usp=sharing)
