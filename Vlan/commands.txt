@@ -1,4 +1,0 @@
-Start module of kernel 802.1Q -> sudo modprobe 8021q
-Create a vlan.20 (Users) -> sudo ip link add link enp0s3 name enp0s3.20 type vlan id 20
-Up vlan 10 -> sudo ip link set enp0s3.20 up
-Add users for Vlan -> sudo ip addr add 192.168.20.x/24 dev enp0s3.20
