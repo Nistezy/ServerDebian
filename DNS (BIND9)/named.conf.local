@@ -10,7 +10,7 @@ zone    "cypherbaron.local" {
 
 
 //Zona reversa
-zone    "2.168.192.in-addr.arpa" {
+zone    "10.168.192.in-addr.arpa" {
         type    master;
         file    "/etc/bind/cypherbaron.local.reverse";
 };
