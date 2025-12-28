@@ -7,11 +7,16 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 
-# The primary network interface
+# The primary network interface IPv4
 auto enp0s3
 iface enp0s3 inet static
         address 192.168.10.50
         netmask 255.255.255.0
+# The primary network interface IPv6
+auto enp0s3
+iface enp0s3 inet6 static
+        address 2804:a:b:c::50/64
+        gateway 2804:a:b:c::1
 
 # The secondary network interface
 auto enp0s8
@@ -20,6 +25,6 @@ iface enp0s8 inet static
         netmask 255.255.255.0
         gateway 192.168.1.1
         dns-nameservers 127.0.0.1 192.168.1.100
-
+        
 #Apply if the conf. -> sudo systemctl restart networking.service
 #Check if the conf. -> ip a
