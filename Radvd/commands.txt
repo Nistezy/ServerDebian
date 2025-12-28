@@ -1,0 +1,1 @@
+Check status radvd -> sudo systemctl status radvd.service
