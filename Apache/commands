@@ -1,0 +1,1 @@
+change onwer for www-data for cypherbaron site -> sudo chown -R www-data:www-data /var/www/cypherbaron/

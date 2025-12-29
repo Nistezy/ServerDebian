@@ -10,6 +10,7 @@ $TTL 1200
                         1200 )          ; Negative Cache TTL
 
 @       IN      NS      ns1.cypherbaron.local.
+@       IN      A       192.168.10.50
 
 ns1     IN      A       192.168.10.1
 gateway IN      A       192.168.10.1
@@ -17,3 +18,4 @@ router  IN      CNAME   gateway
 
 pc01    IN      A       192.168.10.50
 host    IN      CNAME   pc01
+www     IN      A       192.168.10.50
