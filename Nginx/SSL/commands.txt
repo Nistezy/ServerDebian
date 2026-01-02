@@ -1,0 +1,6 @@
+Create directory for ssl key and certificate -> sudo mkdir -p /etc/nginx/ssl
+Permission only for onwer of directory -> sudo chmod 700 /etc/nginx/ssl/
+Create ca.key -> sudo openssl genrsa -out ca.key -out /etc/nginx/ssl/cypherbaron.key 4096
+Create cerificate -> sudo openssl req -new -x509 -key /etc/nginx/ssl/cypherbaron.key -out /etc/nginx/ssl/cypherbaron.crt -days 365
+Transform cerificate to confiable for linux-> sudo cp /etc/nginx/ssl/cypherbaron.crt /usr/local/share/ca-certificates/
+Update certificates -> sudo update-ca-certificates
