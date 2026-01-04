@@ -2,15 +2,14 @@
 // Do any local configuration here
 //
 
-//Zona direta
-zone    "cypherbaron.local" {
-        type    master;
-        file    "/etc/bind/cypherbaron.local.forward";
+// Zona direta
+zone "cypherbaron.lab" {
+        type master;
+        file "/etc/bind/cypherbaron.lab.forward";
 };
 
-
-//Zona reversa
-zone    "10.168.192.in-addr.arpa" {
-        type    master;
-        file    "/etc/bind/cypherbaron.local.reverse";
+// Zona reversa
+zone "10.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/cypherbaron.lab.reverse";
 };
