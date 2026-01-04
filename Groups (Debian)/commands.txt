@@ -1,0 +1,11 @@
+Created a new group named RH with administrative privileges -> sudo groupadd RH
+Created a new group named TI with administrative privileges -> sudo groupadd TI
+
+Created a new user account for Roberto -> sudo adduser Roberto (pass: robertinho123)
+Created a new user account for Amanda -> sudo adduser Amanda (pass: amandinha123)
+
+Added Roberto to the RH group ->sudo gpasswd -a Roberto RH
+Added Amanda to the TI group ->sudo gpasswd -a Amanda TI
+
+Displayed all groups that the user Roberto belongs to -> groups Roberto
+Displayed all groups that the user Amanda belongs to -> groups Amanda
