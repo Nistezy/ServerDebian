@@ -1,0 +1,11 @@
+Install Samba -> sudo apt install samba -y
+Create directory for RH ->sudo mkdir -p /smb/RH
+Create directory for TI ->sudo mkdir -p /smb/TI
+Create directory Private -> sudo mkdir -p /smb/Private
+Directory access for only RH user -> sudo chown :RH /smb/RH/
+Directory access for only TI user -> sudo chown :TI /smb/TI/
+Directory access for only onwer -> sudo chown nistezy:nistezy /smb/Private/
+Gives onwer and group all permission, and other no permission -> sudo chmod 770 /smb/TI/
+Gives onwer and group all permission, and other no permission -> sudo chmod 770 /smb/RH/
+Turn on SGID, gives onwer all permission, group RX and other no permission -> sudo chmod 2750 /smb/Private/
+Test the arquive of conf SMB -> testparm
