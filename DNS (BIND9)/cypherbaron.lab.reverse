@@ -9,7 +9,6 @@ $TTL 1200
                         2419200         ; Expire
                         1200 )          ; Negative Cache TTL
 
-@       IN      NS      ns1.cypherbaron.local.
+@       IN  NS  ns1.cypherbaron.lab.
 
-50      IN      PTR     pc01.cypherbaron.local.
-1       IN      PTR     ns1.cypherbaron.local.
+50      IN  PTR cypherbaron.lab.
