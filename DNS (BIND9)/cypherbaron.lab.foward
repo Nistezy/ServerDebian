@@ -1,0 +1,16 @@
+;
+; Zona direta para 192.168.10.0/24
+;
+$TTL 1200
+@       IN      SOA     ns1.cypherbaron.lab. root.cypherbaron.lab. (
+                        2025122801      ; Serial
+                        86400           ; Refresh
+                        1200            ; Retry
+                        2419200         ; Expire
+                        1200 )          ; Negative Cache TTL
+
+@       IN  NS  ns1.cypherbaron.lab.
+@       IN  A   192.168.10.50
+
+ns1     IN  A   192.168.10.50
+www     IN  A   192.168.10.50
