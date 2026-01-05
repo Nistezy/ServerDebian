@@ -1,0 +1,67 @@
+body {
+    background-color: #0b0f14;
+    color: #e5e7eb;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 80px auto 0 auto; 
+    text-align: center;
+}
+
+
+.attack {
+    margin-top: 40px;
+}
+
+.attack-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-link {
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button-link:hover {
+    background-color: #00ff88;
+    color: #0b0f14;
+}
+
+.admin-top-right {
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.admin-btn {
+    font-size: 0.8rem;
+    padding: 8px 14px;
+    border-color: #666;
+    color: #999;
+}
+
+.admin-btn:hover {
+    background-color: #999;
+    color: #0b0f14;
+}
+
+
+.warning-text  {
+    position: fixed;    
+    bottom: 0;    
+    left: 0;    
+    width: 100%;    
+    padding: 20px 0;      
+    border-top: 1px solid #333; 
+}
