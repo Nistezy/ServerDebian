@@ -1,0 +1,12 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    container_name: juice-shop
+    restart: unless-stopped
+    networks:
+      - juice_net
+    ports:
+      - "9001:9001"
+
+networks:
+  juice_net:

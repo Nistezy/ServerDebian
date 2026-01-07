@@ -1,0 +1,2 @@
+Install docker and docker compose -> sudo apt install docker.io docker-compose -y
+Add user for docker group -> sudo usermod -aG docker $USER

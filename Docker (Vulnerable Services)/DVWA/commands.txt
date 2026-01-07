@@ -1,0 +1,3 @@
+Create network for DVWA -> docker network create dvwa_net
+Up script docker-compose, rising DVWA ->  docker compose up -d
+Check the container connections -> sudo docker ps 
