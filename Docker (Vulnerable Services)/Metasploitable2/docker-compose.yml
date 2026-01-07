@@ -1,0 +1,36 @@
+services:
+  metasploitable2:
+    image: tleemcjr/metasploitable2
+    container_name: metasploitable2
+    hostname: metasploitable
+    privileged: true
+    networks:
+      - metasploitable2
+    ports:
+      - "9002:21"
+      - "9003:22"
+      - "9004:23"
+      - "9005:25"
+      - "9006:53/udp"
+      - "9007:80"
+      - "9008:111"
+      - "9009:139"
+      - "9010:445"
+      - "9011:512"
+      - "9012:513"
+      - "9013:514"
+      - "9014:1099"
+      - "9015:1524"
+      - "9016:2049"
+      - "9017:2121"
+      - "9018:3306"
+      - "9019:3632"
+      - "9020:5432"
+      - "9021:5900"
+      - "9022:6000"
+      - "9023:6667"
+      - "9024:8009"
+      - "9025:8180"
+
+networks:
+  metasploitable2:

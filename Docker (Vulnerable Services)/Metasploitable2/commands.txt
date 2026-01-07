@@ -1,0 +1,4 @@
+Create directory for Metasploitable2 -> sudo mkdir -p ~/lab/metasplotable2
+Create network for Metasploitable2 -> docker network create metasplotable2
+Up script docker-compose, rising Metasploitable2 ->  docker compose up -d
+Check the container connections -> sudo docker ps 
