@@ -1,0 +1,5 @@
+Install service NTP -> sudo apt install chrony -y
+Verify tracking of chrony -> chronyc -n tracking
+Verify clients connected -> sudo chronyc clients
+
+Add NTP for Client Win10 -> w32tm /config /manualpeerlist:"192.168.10.50,0x8" /syncfromflags:manual /update && w32tm /resync /force

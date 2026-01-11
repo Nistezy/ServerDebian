@@ -1,0 +1,2 @@
+sudo ufw allow out 123/udp
+sudo ufw allow in 123/udp
