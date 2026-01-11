@@ -3,6 +3,7 @@ services:
     image: tleemcjr/metasploitable2
     container_name: metasploitable2
     hostname: metasploitable
+    restart: unless-stopped
     privileged: true
     networks:
       - metasploitable2
