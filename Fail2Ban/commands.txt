@@ -1,0 +1,2 @@
+Install Fail2Ban -> sudo apt install fail2ban -y
+Stats of sshd jail -> sudo fail2ban-client status sshd
