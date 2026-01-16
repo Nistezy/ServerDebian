@@ -12,7 +12,6 @@ O projeto segue um roadmap estruturado por fases, evoluindo desde a base do sist
 
 🧱 Arquitetura Geral
 * O ambiente foi projetado de forma modular, com:
-* Segmentação de rede por VLAN;
 * Serviços isolados com Docker;
 * Aplicações vulneráveis para testes controlados;
 * Camadas progressivas de segurança, monitoramento e logging;
