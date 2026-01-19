@@ -1,0 +1,5 @@
+Install Suricata -> sudo apt install suricata -y
+Suricata version -> suricata -V
+Create backup of suricata.yaml -> sudo cp suricata.yaml suricata.yaml.bkp
+Test config of suricata -> sudo suricata -T -c /etc/suricata/suricata.yaml -i enp0s3
+Install rules of suricata and update -> sudo suricata-update
