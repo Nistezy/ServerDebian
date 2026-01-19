@@ -10,8 +10,6 @@ deb-src http://security.debian.org/debian-security trixie-security main non-free
 deb http://deb.debian.org/debian/ trixie-updates main non-free-firmware
 deb-src http://deb.debian.org/debian/ trixie-updates main non-free-firmware
 
-deb http://deb.debian.org/debian sid main contrib non-free non-free-firmware
-
 # This system was installed using small removable media
 # (e.g. netinst, live or single CD). The matching "deb cdrom"
 # entries were disabled at the end of the installation process.
