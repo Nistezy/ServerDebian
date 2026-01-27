@@ -1,0 +1,8 @@
+Install Nginx, ModSecurity, Git and dependencies ->  sudo apt install -y sudo apt install -y git gcc make automake autoconf libtool pkgconf libpcre2-8-0 libpcre2-dev libxml2 libxml2-dev libyajl-dev libgeoip-dev liblmdb-dev  libcurl4-openssl-dev  libssl-dev zlib1g zlib1g-dev
+Clone WAF -> sudo git clone --recursive https://github.com/owasp-modsecurity/ModSecurity ModSecurity
+Build Process -> sudo /build.sh &&  sudo ./configure && sudo make && sudo make install # "Make a coffe, it's take so much time! ☕"
+Clone Conector Modsecurity in Nginx -> sudo git clone https://github.com/owasp-modsecurity/ModSecurity-nginx.git
+Install nginx .tar -> sudo wget http://nginx.org/download/nginx-1.26.3.tar.gz && sudo tar -xzf nginx-1.24.0.tar.gz && cd nginx-1.24.0
+Configure Time -> sudo ./configure --with-compat --add-dynamic-module=../ModSecurity-nginx --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --modules-path=/usr/lib/nginx/modules
+Make modules and copy to directory nginx -> sudo make modules
+Create nginx module path and copy .so ->  sudo mkdir -p /usr/lib/nginx/modules/ && sudo cp cd /usr/local/src/nginx-1.26.3/objs/ngx_http_modsecurity_module.so /usr/lib/nginx/modules
