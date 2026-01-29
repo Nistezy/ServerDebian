@@ -30,6 +30,9 @@ server {
         #Scaner block
         if ($http_user_agent ~* (dirsearch|gobuster|ffuf|nikto)){
         return 403;
+        #ModSecurity
+        modsecurity on;
+        modsecurity_rules_file /etc/nginx/modsecurity/main.conf
         }
 
         error_log /var/log/nginx/cypherbaron_error.log;

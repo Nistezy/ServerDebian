@@ -1,0 +1,7 @@
+Create directory for modsecurity in nginx -> 
+Create directory for modsecurity logs -> sudo mkdir -p /var/log/modsecurity
+Clone CRS -> sudo git clone https://github.com/coreruleset/coreruleset.git
+Copy unicode.mapping for /modsecurity -> sudo cp /usr/local/src/ModSecurity/unicode.mapping /etc/nginx/modsecurity/
+Create .conf principal -> sudo cp /usr/local/src/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsecurity/modsecurity.conf
+Create loader for rules -> sudo nano /etc/nginx/modsecurity/main.conf
+Garanted permissions for log -> sudo touch /var/log/modsecurity/audit.log && sudo chown -R www-data:www-data /var/log/modsecurity && sudo chmod 750 /var/log/modsecurity/
