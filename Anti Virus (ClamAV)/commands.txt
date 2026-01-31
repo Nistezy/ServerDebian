@@ -1,0 +1,7 @@
+Install ClamAV -> sudo apt update && sudo apt full-upgrade -y && sudo apt install clamav clamav-daemon
+First upgrade -> sudo systemctl stop clamav-freshclam.service && sudo freshclam && sudo systemctl enable clamav-freshclam.service
+Acive ClamAV in daemon -> sudo systemctl start clamav-daemon
+Scan if deamon (more speed) -> $ sudo clamdscan /var/www/cypherbaron/
+Print only infected results and summary -> clamscan -r --infected --bell /var/www/cypherbaron/
+Create and Permission for root quarintine -> sudo mkdir -p /var/quarantine && sudo chown -R root:root /var/quarantine/
+Scan and move infected archives -> clamscan -r --infected --bell /var/www/cypherbaron/ --move=/var/quarantine/

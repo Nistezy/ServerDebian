@@ -20,5 +20,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 47 6    * * 7   root    test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.weekly; }
 52 6    1 * *   root    test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.monthly; }
 0 1 * * * root tar -czf /backup/server-config-$(date +\%F).tar.gz /etc/bind /etc/dhcp /etc/network
-* 6     * * *   root    /usr/local/secops/./checkconf.sh
+0 6     * * *   root    /usr/local/secops/./checkconf.sh
+0 12 * * * root /usr/bin/clamdscan /var/www/cypherbaron --infected --log=/var/log/clamav/scan_site-$(date +\%F).log
 #
